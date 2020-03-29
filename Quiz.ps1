@@ -9,6 +9,7 @@ $count = 1
 $correct = 0
 $wrong = 0
 
+Write-Host -ForegroundColor YELLOW "You've got "$acronymes.count" questions to answer... Let's get started!"
 # Start loop untill the content of the acronymes array is empty or 0
 while ($acronymes.count -ne 0){
 
@@ -28,6 +29,7 @@ while ($acronymes.count -ne 0){
     #Write-Host -ForegroundColor YELLOW $newAcronymes
 
     # Print the question in the console.
+
     $question = Write-Host "`n$count) Spell out the acronym: $getQuestion"
     
     # Prompt user input.
