@@ -15,7 +15,7 @@ while ($acronymes.count -ne 0){
     #Write-Host -ForegroundColor YELLOW $newAcronymes
 
     
-    $question = Write-Host "`n$count) Give the explanation of acronym: $getQuestion"
+    $question = Write-Host "`n$count) Spell out the acronym: $getQuestion"
     $answer = Read-Host "Answer"
 
     IF ($answer -eq $getAnswer){
@@ -23,7 +23,7 @@ while ($acronymes.count -ne 0){
         $correct = $correct + 1
 
     } ELSE {
-        Write-Host "Wrong! The correct answer is: $getAnswer"
+        Write-Host "Wrong! The correct spelling is: $getAnswer"
         $wrong = $wrong + 1
     }
 
